@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 *,
 *::before,
 *::after {
@@ -11,22 +17,68 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #000; }
 
-.container-main {
+h1 {
+  font-size: 3em; }
+
+h3 {
+  display: inline;
+  font-size: 1.3em; }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
   width: 100%; }
+  nav:last-child {
+    margin-right: 0; }
+
+.container-main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 0;
+  right: -1px;
+  left: -1px;
+  z-index: 999; }
+  .container-main::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .container-left, .container-right {
-  width: 50%; }
+  float: left;
+  display: block;
+  width: 51.17883%; }
+  .container-left:last-child, .container-right:last-child {
+    width: 48.82117%; }
 
-.container-left {
+.logo-box {
+  float: left;
+  width: 40%;
+  height: 24vh;
+  background-image: url("../img/main-logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.events-box {
+  width: 60%;
+  height: 24vh;
+  background-color: #F4EFDE;
   float: left; }
 
-.container-right {
-  float: right; }
+.synopsis-box {
+  background-color: #F4EFDE; }
 
-div {
-  -webkit-column-rule: 0.5em solid #000;
-  -moz-column-rule: 0.5em solid #000;
-  column-rule: 0.5em solid #000; }
+.author-box {
+  background-color: #F4EFDE; }
+
+.email, .twitter, .linkedin, .pinterest {
+  font-size: 1.7em; }
+
+.shop-box {
+  background-color: #F4EFDE; }
 
 ul {
   list-style: none; }
@@ -39,5 +91,20 @@ ul a {
   color: #000; }
   ul a:hover {
     color: #CCCCCC; }
+
+nav, .logo-box, .events-box {
+  border: 0.6em solid #000; }
+
+h1, h3 {
+  text-align: center; }
+
+.container-left h3, .container-right h3 {
+  border-bottom: 2px solid #000;
+  padding-bottom: .3vh;
+  letter-spacing: .1vw; }
+
+.events-box:hover, .synopsis-box:hover, .author-box:hover, .email:hover, .twitter:hover, .linkedin:hover, .pinterest:hover, .shop-box:hover {
+  background-color: #000;
+  color: #F4EFDE; }
 
 /*# sourceMappingURL=application.css.map */

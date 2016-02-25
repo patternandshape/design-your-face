@@ -14,3 +14,16 @@ body {
   font-family: $stack-mon;
   color: $black;
 }
+
+h1 {
+  font-size: 3em;
+}
+
+h1, h3 {
+  @extend %centered;
+}
+
+h3 {
+  display: inline;
+  font-size: 1.3em;
+}

@@ -1,15 +1,17 @@
 .container-main {
-  width: 100%;
+  @include outer-container(100%);
+
+  position: fixed;
+  top: 0;
+  right: -1px;
+  left: -1px;
+  z-index: 999;
 }
 
 .container-left, .container-right  {
-  width: 50%;
-}
+  @include span-columns(6 of 12, block-collapse );
 
-.container-left {
-  float: left;
-}
-
-.container-right {
-  float: right;
+  h3 {
+  @extend %underline;
+  }
 }

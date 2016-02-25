@@ -15,3 +15,22 @@
     color: $hover-nav;
   }
 }
+
+%border {
+  border: .6em solid $black;
+}
+
+%centered {
+  text-align: center;
+}
+
+%underline {
+  border-bottom: 2px solid $black;
+  padding-bottom: .3vh;
+  letter-spacing: .1vw;
+}
+
+%hover-box {
+  background-color: $black;
+  color: $beige;
+}
