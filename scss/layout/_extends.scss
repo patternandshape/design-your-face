@@ -1,0 +1,17 @@
+//nav styles
+
+%ul-bar {
+  list-style: none;
+}
+
+%li-style {
+  display: inline;
+}
+
+%a-style {
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    color: $hover-nav;
+  }
+}

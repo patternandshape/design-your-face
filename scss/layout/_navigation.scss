@@ -1,0 +1,11 @@
+ul {
+  li {
+  @extend %li-style;
+  }
+  
+  @extend %ul-bar;
+
+  a {
+    @extend %a-style;
+  }
+}
