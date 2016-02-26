@@ -1,47 +1,99 @@
 nav {
-  @extend %border;
+  border: .6em solid $black;
 }
 
 
 .logo-box {
-  @extend %border;
   float: left;
-  width: 40%;
+  width: 50%;
   height: 24vh;
   background-image: url('../img/main-logo.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
-  // img {
-  //   width: 100%;
-  //   height: 100%;
-  //   min-height: 281px;
-  //   display: block;
-  //   object-fit: cover;
-  // }
+  border: .6em solid $black;
+  border-top: 0;
 }
 
 .events-box {
-  @extend %border;
-  width: 60%;
+  @extend %border-right-bottom;
+  width: 50%;
   height: 24vh;
   background-color: $beige;
   float: left;
+
   &:hover {
     @extend %hover-box;
   }
 }
 
-.synopsis-box {
+.book-box {
+  position: relative;
   background-color: $beige;
+  border: .6em solid $black;
+  border-top: 0;
+  float: left;
+  width: 100%;
+  height: 69.8vh;
+  bottom: 0;
+  left: 0;
+  background-image: url('../img/book2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .arrow-left {
+    background-color: $white;
+    font-size: 2em;
+    position: absolute;
+    bottom: 93.25%;
+    left: 90.50%;
+    border-left: .3em solid $black;
+    border-bottom: .3em solid $black;
+  }
+
+  .arrow-right {
+    background-color: $white;
+    font-size: 2em;
+    position: absolute;
+    bottom: 93.25%;
+    left: 95.25%;
+    border-left: .3em solid $black;
+    border-bottom: .3em solid $black;
+  }
+  }
+
+  .copy {
+    position: absolute;
+    top: 97%;
+    left: 1%;
+  }
+
+.dudes-box {
+  @extend %border-right-bottom;
+  background-image: url('../img/dudes.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48vh;
+  float: left;
+}
+
+.synopsis-box {
+  @extend %border-right-bottom;
+  background-color: $beige;
+  float: left;
+  width: 50%;
   &:hover {
     @extend %hover-box;
   }
 }
 
 .author-box {
+  @extend %border-right-bottom;
   background-color: $beige;
+  float: left;
+  width: 50%;
   &:hover {
     @extend %hover-box;
   }
@@ -54,7 +106,21 @@ nav {
   }
 }
 
+.email, .linkedin {
+  @extend %border-right-bottom;
+}
+
+.twitter, .pinterest {
+  border-bottom: .6em solid $black;
+}
+
+.publisher-box {
+  @extend %border-right-bottom;
+}
+
 .shop-box {
+  width: 100%;
+  @extend %border-right-bottom;
   background-color: $beige;
   &:hover {
     @extend %hover-box;

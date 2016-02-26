@@ -1,4 +1,4 @@
-# Eames Office
+# Design Your Face
 
 ##### A responsive website for Design Your Face based on the modular website for http://designyourlife.com.au.
 

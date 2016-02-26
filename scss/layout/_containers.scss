@@ -1,6 +1,5 @@
 .container-main {
   @include outer-container(100%);
-
   position: fixed;
   top: 0;
   right: -1px;

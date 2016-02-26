@@ -16,8 +16,9 @@
   }
 }
 
-%border {
-  border: .6em solid $black;
+%border-right-bottom {
+  border-right: .6em solid $black;
+  border-bottom: .6em solid $black;
 }
 
 %centered {
