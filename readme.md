@@ -17,13 +17,12 @@ A website using modular, dynamic components for the Design Your Face using Sass 
 * CSS
 * SCSS
 * Bourbon
-* Atom
-* Terminal
-* Google Fonts API
+* Google Fonts
+* Font Awesome
 
 
 ##### License
 
-*This software is licensed under the MIT license.*
+* This software is licensed under the MIT license.*
 
 &copy;2016 **Molly Curtin &amp; Sara Wagner**
